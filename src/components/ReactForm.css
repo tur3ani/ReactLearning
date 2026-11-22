@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #eef4f9;
+  color: #1f2937;
+  display: block;
+}
+
+.app-container {
+  max-width: 760px;
+  margin: 50px auto;
+  padding: 0 20px;
+  text-align: left;
+}
+
+/* Header with the taller blue left bar */
+.app-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1f2937;
+  border-left: 6px solid #1976d2;
+  padding: 10px 0 10px 16px;
+  margin: 0 0 28px 0;
+  line-height: 1.2;
+}
+
+/* White rounded cards */
+.card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 26px 24px;
+  margin-bottom: 24px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+/* Form layout */
+.patient-form {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.patient-form input {
+  flex: 1;
+  min-width: 0;
+  background-color: #ffffff;
+  color: #1f2937;
+  padding: 11px 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+}
+
+.patient-form input::placeholder {
+  color: #8c95a3;
+}
+
+.patient-form input:focus {
+  border-color: #1976d2;
+}
+
+.add-btn {
+  background-color: #1976d2;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 11px 18px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.add-btn:hover {
+  background-color: #1565c0;
+}
+
+/* Patients card */
+.patients-title {
+  margin: 0 0 18px 0;
+  font-size: 20px;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.empty-text {
+  color: #374151;
+  font-size: 14px;
+  margin: 0 0 16px 0;
+}
+
+.patient-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.patient-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.patient-item:last-child {
+  border-bottom: none;
+}
+
+.delete-btn {
+  background-color: #ef4444;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 7px 14px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background-color: #dc2626;
+}
